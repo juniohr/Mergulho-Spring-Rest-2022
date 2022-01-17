@@ -17,7 +17,7 @@ public class CatalogoClienteService {
 	
 	public Cliente buscar(Long clienteId) {
 		return clienteRepository.findById(clienteId)
-				.orElseThrow(() -> new NegocioException(""));
+				.orElseThrow(() -> new NegocioException("não existe"));
 	}          		
 	
 	@Transactional
